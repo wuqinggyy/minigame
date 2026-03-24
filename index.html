@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星际闪避者</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-1"></div>
+    <div class="page-glow page-glow-2"></div>
+    <main class="app">
+      <section class="panel">
+        <div class="title-wrap">
+          <p class="eyebrow">COSMIC ARCADE</p>
+          <h1>星际闪避者</h1>
+          <p class="subtitle">穿过碎星航道，躲开陨石，回收能量核心，尽量把分数拉高。</p>
+        </div>
+
+        <div class="status-strip">
+          <span>本地静态运行</span>
+          <span>霓虹星域</span>
+          <span>键盘操控</span>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <span>任务分数</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>舰体完整度</span>
+            <strong id="lives">3</strong>
+          </div>
+          <div class="stat-card">
+            <span>航线纪录</span>
+            <strong id="best">0</strong>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="startBtn">开始游戏</button>
+          <button id="restartBtn" class="secondary">重新开始</button>
+        </div>
+
+        <div class="tips">
+          <p>操作：<strong>WASD</strong> 或 <strong>方向键</strong></p>
+          <p>规则：碰到陨石会掉血，吃到能量核心会加分、回血并获得短暂护盾。</p>
+        </div>
+      </section>
+
+      <section class="game-shell">
+        <div class="shell-hud">
+          <span>SECTOR N-07</span>
+          <span>星域规避模拟</span>
+        </div>
+        <canvas id="gameCanvas" width="720" height="480"></canvas>
+        <div id="overlay" class="overlay show">
+          <div class="overlay-card">
+            <h2 id="overlayTitle">准备起飞</h2>
+            <p id="overlayText">点击“开始游戏”，启动引擎，进入闪避航线。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
