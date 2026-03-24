@@ -1,5 +1,9 @@
 # 星际闪避者
 
+![星际闪避者首页截图](./assets/cover.png)
+
+在线试玩：<https://wuqinggyy.github.io/minigame/>
+
 一个原生 HTML / CSS / JavaScript 写的网页小游戏。
 
 ## 玩法
@@ -14,6 +18,11 @@
 - `W A S D` 或方向键：移动
 - `空格`：在未开始/结束后快速开局
 - 点击页面按钮也可以开始或重开
+
+## 在线访问
+
+- GitHub Pages：<https://wuqinggyy.github.io/minigame/>
+- 仓库地址：<https://github.com/wuqinggyy/minigame>
 
 ## 运行方法
 
@@ -38,6 +47,7 @@ http://localhost:8000
 - `index.html`：页面结构
 - `style.css`：界面样式
 - `script.js`：游戏逻辑
+- `assets/cover.png`：README 首页截图
 
 ## 特点
 
@@ -45,3 +55,4 @@ http://localhost:8000
 - 无需打包工具
 - 直接本地可玩
 - 带分数、最高分、生命值、开始/重开、结束判定
+- 已发布到 GitHub Pages，可直接分享
